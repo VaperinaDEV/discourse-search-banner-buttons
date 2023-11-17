@@ -1,0 +1,12 @@
+<div class="search-banner-buttons-container">
+  {{#each SearchBannerButtons as |button|}}
+    <a
+      class="search-banner-button"
+      alt={{button.title}}
+      href={{button.url}}
+    >
+      {{replace-emoji button.emoji}}
+      {{button.title}}
+    </a>
+  {{/each}}
+</div>

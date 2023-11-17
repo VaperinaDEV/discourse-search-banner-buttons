@@ -1,0 +1,35 @@
+.display-search-banner {
+  .search-banner-buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    margin: 1.5em 0 0 0;
+    width: 100%;
+    max-width: unset;
+    @media screen and (max-width: 1000px) {
+      gap: 0.5em;
+      font-size: var(--font-down-1);
+    }
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+    
+    .search-banner-button {
+      color: #{$button_color};
+      font-weight: bold;
+      padding: 0.5em 0.65em;
+      text-wrap: nowrap;
+      background-color: #{$button_background};
+      border-radius: #{$button_rounding};
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5em;
+      box-shadow: inset 0px 0px 0px 2px #{$button_shadow_color};
+      &:hover {
+        background-color: #{$button_background_hover};
+      }
+    }
+  }
+}

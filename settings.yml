@@ -1,0 +1,39 @@
+search_banner_buttons:
+  default: >-
+    []
+  json_schema: >-
+    {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "emoji": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+
+button_rounding:
+  type: string
+  default: "4px"
+button_background:
+  type: string
+  default: "var(--tertiary)"
+button_background_hover:
+  type: string
+  default: "var(--tertiary-hover)"
+button_color:
+  type: string
+  default: "var(--secondary)"
+button_shadow_color:
+  type: string
+  default: "var(--tertiary-hover)"
